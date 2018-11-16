@@ -1,17 +1,15 @@
-# Jenkins-HockeyApp-Appium-ReactNative
-Guidance on integrating Kobiton service into the build pipeline of mobile app development: Jenkins, HockeyApp, Appium and ReactNative
+# Integrating Kobiton into Jenkins mobile application development pipeline
 
-If you are a company with a domain, ex: https://awesome-mapp.com and you use:
+In mobile application development, performing testing on **real** devices before releasing is a crucial, but also costly process, which means that only few developers are able to perform testing on real devices, but only a very limited range of devices.
 
-- Jenkins to build the app
-- HockeyApp for keeping the daily app build
-- Appium to write the automation test
-- ReactNative to write app
+By integrating Kobiton into your mobile application development pipeline, Jenkins will be able to execute an automation testing on real devices, which help improve development process and product quality.
 
-The guidelines in this repo will show you how to trigger a Jenkins build from a push on GitHub (i.e. everytime a change is made to your source code), and how to run automation tests with Kobiton. 
+This guide is applicable if you are using these tools and technologies in your pipeline:
+- ReactNative as a technology to develop the mobile application.
+- Appium as a framework to develop the automation test scripts.
+- Jenkins as a CI/CD tool.
+- GitHub as a VCS provider to store your test scripts on.
 
-## Contents
-1. First guide will demonstrate [how to trigger a Jenkins build from a push to GitHub](./1-triggering-jenkins.md). 
+<img src="docs/assets/diagram.svg"/>
 
-2. The second guide will demonstrate [how to run automation tests on your app with the Kobiton service](./2-running-automation-testing.md). 
-
+Refer to [our documentation](./docs/README.md) for more details on how to integrate Kobiton with Jenkins.
