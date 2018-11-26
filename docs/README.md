@@ -32,7 +32,7 @@ To give you an in-depth demonstration of the integration flow, we have provided 
 You can check out the sample content or keep reading because they are used in below steps as well.
 
 #### 1.3. Execution environment
-On machine running Jenkins slave (slave - master) or Jenkins (single node):
+On machine running Jenkins:
 - Install latest version of NodeJS.
 > Refer to https://nodejs.org/en/download/ for instructions on how to install NodeJS.
 
@@ -42,7 +42,7 @@ Follow steps below to get started:
 
 1. Fork this repository.
 2. Create a Jenkins Freestyle project pointing to the forked repository.
-> Refer to [Jenkins Documentation](https://confluence.jetbrains.com/display/TCD18/Creating+and+Editing+Projects) for instructions on how to create a Jenkins project pointing to a repository.
+> Refer to [Jenkins Documentation]() for instructions on how to create a Jenkins project pointing to a repository.
 
 #### 2.2. Setting Kobiton Username and API key
 In your Jenkins credentials, add two new secret texts :
@@ -135,7 +135,7 @@ npm run automation-test-script
 ![Build Step - Execute Shell](./assets/execute-shell.png)
 
 Here is the in-depth explanation of the above script in `Custom script` section:
-- Change working directory to `samples/automation-test`
+- Change the working directory to `samples/automation-test`
 ```bash
 cd samples/automation-test
 ```
